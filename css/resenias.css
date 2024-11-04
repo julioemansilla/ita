@@ -1,0 +1,35 @@
+
+.resenias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    /* width: 100%; */
+    padding: 20px;
+    
+
+}
+
+.resenias {
+    padding: 20px;
+    border: 1px solid #ddd;
+
+    /*borde redondeado*/
+    border-radius: 8px;
+    /*sobra paralela*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resenias h3 {
+    margin-bottom: 10px;
+    color: brown;
+    /* color: #4CAF50; */
+    font-size: 18px;
+    
+}
+
+.resenias p {
+    font-size: 16px;
+    color: brown;
+    /* color: #333; */
+}

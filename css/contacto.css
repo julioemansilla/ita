@@ -1,0 +1,86 @@
+
+main {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content {
+    /* background-color: #45a049; */
+    background-color: bisque;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    color:brown;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulario button {
+    background-color: bisque;
+    color: brown;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: pink;
+}
+
+/* Estilo general para dispositivos de escritorio */
+body {
+    font-size: 16px;
+}
+
+/* Estilo para tabletas (ancho de pantalla entre 600px y 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    nav#nav_bar ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Estilo para móviles (ancho de pantalla de 600px o menor) */
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+    header, footer, main {
+        padding: 10px;
+    }
+    nav#nav_bar ul {
+        flex-direction: column;
+    }
+    .mensaje span {
+        font-size: 10px;
+    }
+}
