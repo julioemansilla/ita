@@ -10,3 +10,13 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.mapa{
+    margin: 30px 0 30px 80px ;
+
+    
+    border-color: brown;
+    border-width: 8px 8px 8px 8px;
+    border-style: solid;
+    border-radius: 20px;
+}

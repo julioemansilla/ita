@@ -11,12 +11,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/donde.css">
     <title>Ita</title> <!--Nombre de la Web en el Navegador-->
     <link rel="icon" href="img/ita_logo.ico"> <!--Icono logo para la solapa del navegador-->
 </head>
@@ -26,8 +22,8 @@
             <!-- <section id="logo"> -->
             <section class="section_logo">
                 <div id="div_img_logo_ita">
-                    <a href="index.html"><img id="img_logo_ita"  src="img/ita_logo.jpg" alt="logo_ita"></a>
-                </div>
+                    <a href="/index.html"><img id="img_logo_ita"  src="/img/ita_logo.jpg" alt="img_logo_ita"></a>
+                </div>  
                 <div id="div_form">
                     <form action="#" method="POST">
                         <input type="search" name="find" id="find" place>
@@ -42,7 +38,7 @@
             <section>
                 <nav  id="nav_bar">
                     <ul>
-                        <li> <a href="./pages/accesorios.html">Accesorios</a></li>
+                        <li> <a href="/pages/accesorios.html">Accesorios</a></li>
                         <li> <a href="#">Maquillaje</a></li>
                         <li> <a href="#">Indumentaria</a></li>
                         <li> <a href="#">Complementos</a></li>
@@ -64,21 +60,36 @@
         </header>
 
         <main>
-            <img src="/img/img_home.jpg" alt="nuetros_productos">
+            
+
+            <section class="donde">
+                <section class="donde_txt">
+                    <h1>Donde Estamos</h1>
+                    <p>Tienda: Ruta S273 y 9 de julio.</p>
+                    <p>X5191 Villa Yacanto Cordoba</p>
+                    <br>
+                    <p>Stand Feria de Emprendedores</p>
+                </section>
+                <section class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.0679706782453!2d-64.755144!3d-32.0944486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2c78d7644fef5%3A0x60c3cc41bead51eb!2sITA!5e0!3m2!1ses!2sar!4v1729992712270!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                
+
+            </section> 
         </main>
 
         <footer>
             <section class="newsletter"> <!--Separador Registro al Newsletter-->
-                <h2 class="news_item">Newsletter</h2>
-                <p class="news_item">Registrate y recibí nuestras ofertas</p>
-                <form class="news_item" action="https://formspree.io/f/xwpkowqr" method="POST">
+                <h2>Newsletter</h2>
+                <p>Registrate y recibí nuestras ofertas</p>
+                <form action="">
                     <input type="email" id="mail_news" name="mail" placeholder="Ingrese su Mail" required class="email_news">
                 </form>
-                <a class="news_item" href="#">Enviar</a>
+                <a href="#">Enviar</a>
             </section> 
 
             <section class="tienda_encontrarnos_atencion"> <!--Donde Encontrarnos-->
-                <section class="tienda tea_item">
+                <section class="tienda">
                     <h4 class="footer_h4">Tienda Online</h3>
                         <a href="#"><p>Políticas de devolución</p></a>
                         <a href="#"><p>Sobre Ita Cosmeticos</p></a>
@@ -86,18 +97,18 @@
                         <a href="#"><p>Información de Envíos</p></a>
                 </section>
                 
-                <section class="encontrarnos tea_item">
+                <section class="encontrarnos">
                     <h4 class="footer_h4">Donde Encontrarnos</h3>
-                        <a href="/pages/donde.html"><p><i class="fi fi-rs-marker i_footer"></i>Localizador de Tienda</p></a>
-                        <p><i class="fi fi-brands-instagram i_footer"></i>Instagram</p>
-                        <p><i class="fi fi-brands-facebook i_footer"></i>Facebook</p>
+                        <a href="/pages/donde.html"><p><i class="fi fi-rs-marker"></i>Localizador de Tienda</p></a>
+                        <p><i class="fi fi-brands-instagram"></i>Instagram</p>
+                        <p><i class="fi fi-brands-facebook"></i>Facebook</p>
                 </section>
                     
-                <section class="atencion tea_item">
+                <section class="atencion">
                     <h4 class="footer_h4">Atención al Cliente</h3>
-                        <p><i class="fi fi-brands-whatsapp i_footer"></i>5491122223333</p>
-                        <p><i class="fi fi-rr-phone-call i_footer"></i>+54 9 11 2222 3333</p>
-                        <p><i class="fi fi-rr-envelope i_footer"></i>reclamos@ita.com.ar</p>
+                        <p><i class="fi fi-brands-whatsapp"></i>5491122223333</p>
+                        <p><i class="fi fi-rr-phone-call"></i>+54 9 11 2222 3333</p>
+                        <p><i class="fi fi-rr-envelope"></i>reclamos@ita.com.ar</p>
                 </section>     
             </section>     
                     
@@ -105,22 +116,22 @@
                 <section class="pagos"> <!--Medios de pago-->
                     <h4 class="footer_h4">Medios de pago</h4>
 
-                        <img src="img/medios_pago/amex.png" alt="American Express">
-                        <img src="img/medios_pago/cabal.png" alt="Cabal Debito">
-                        <img src="img/medios_pago/cencosud.png" alt="Cencosud">
-                        <img src="img/medios_pago/maestro.png" alt="Maestro">
-                        <img src="img/medios_pago/mastercard.png" alt="mastercard">
-                        <img src="img/medios_pago/mercadopago.png" alt="Mercadopago">
-                        <img src="img/medios_pago/rapipago.png" alt="Rapipago">
-                        <img src="img/medios_pago/tarjeta-naranja.png" alt="Tarjeta Naranja">
-                        <img src="img/medios_pago/visa.png" alt="Visa">
+                        <img src="/img/medios_pago/amex.png" alt="American Express">
+                        <img src="/img/medios_pago/cabal.png" alt="Cabal Debito">
+                        <img src="/img/medios_pago/cencosud.png" alt="Cencosud">
+                        <img src="/img/medios_pago/maestro.png" alt="Maestro">
+                        <img src="/img/medios_pago/mastercard.png" alt="mastercard">
+                        <img src="/img/medios_pago/mercadopago.png" alt="Mercadopago">
+                        <img src="/img/medios_pago/rapipago.png" alt="Rapipago">
+                        <img src="/img/medios_pago/tarjeta-naranja.png" alt="Tarjeta Naranja">
+                        <img src="/img/medios_pago/visa.png" alt="Visa">
 
                 </section>
 
                 <section class="envios"> <!--Medios de Envio-->
                     <h4 class="footer_h4">Medios de envíos</h4> 
-                        <img src="img/medios_pago/correoargentino.png" alt="Correo Argentino">
-                        <img src="img/medios_pago/envionube.png" alt="envionube">
+                        <img src="/img/medios_pago/correoargentino.png" alt="Correo Argentino">
+                        <img src="/img/medios_pago/envionube.png" alt="envionube">
                 </section>
                 
             </section> 
