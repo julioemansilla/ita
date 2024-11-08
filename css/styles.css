@@ -210,3 +210,48 @@ margin: 0 1rem 0 0;
     color: white;
     align-self: center;
 }
+
+
+/* Tamaño de imagen en dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+    main img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section_logo{
+        display:flex ;
+        justify-content: space-around;
+        height: 150;
+        background-color:beige;
+        font-size: 0.75rem;
+    }
+    
+    #find {
+        width: 100px; /* Ajusta el ancho */
+        height: 20px; /* Ajusta la altura */
+        padding: 5px; /* Añade relleno interno */
+        font-size: 16px; /* Tamaño del texto */
+    }
+
+    #butt_find {
+        width: 50px; /* Ajusta el ancho */
+        height: 20px; /* Ajusta la altura */
+        padding: 5px; /* Añade relleno interno */
+        font-size: 12px; /* Tamaño del texto */
+    }
+
+    nav ul li a{
+        font-size: medium;
+    }
+}
+
+/* Tamaño de imagen en tabletas (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    main img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+
