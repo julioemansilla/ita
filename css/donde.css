@@ -13,10 +13,54 @@
 
 .mapa{
     margin: 30px 0 30px 80px ;
-
-    
     border-color: brown;
     border-width: 8px 8px 8px 8px;
     border-style: solid;
     border-radius: 20px;
+}
+
+/* Estilo general para dispositivos de escritorio */
+body {
+    font-size: 16px;
+}
+
+/* Estilo para tabletas (ancho de pantalla entre 600px y 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    nav#nav_bar ul {
+        display: flex;
+        /* flex-direction: column; */
+    }
+}
+
+/* Estilo para móviles (ancho de pantalla de 600px o menor) */
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+    header, footer, main {
+        padding: 10px;
+    }
+    nav#nav_bar ul {
+        flex-direction: column;
+    }
+    .mensaje span {
+        font-size: 10px;
+    }
+
+    .donde {
+        flex-direction: column; /* Alinea el texto arriba del mapa */
+        align-items: center;
+    }
+
+    .mapa iframe {
+        width: 100%;  /* Ocupa el ancho completo de la pantalla en móviles */
+        height: 250px; /* Ajustar altura en móviles */
+    }
+
+    .donde_txt {
+        margin-bottom: 20px; /* Espacio entre el texto y el iframe */
+    }
 }
