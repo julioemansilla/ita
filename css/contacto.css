@@ -40,7 +40,7 @@ main {
 }
 
 .formulario button {
-    background-color: bisque;
+    background-color: pink;
     color: brown;
     padding: 10px;
     border: none;
@@ -50,7 +50,9 @@ main {
 }
 
 .formulario button:hover {
-    background-color: pink;
+   /* background-color: pink; */
+    background-color: bisque;
+
 }
 
 /* Estilo general para dispositivos de escritorio */
