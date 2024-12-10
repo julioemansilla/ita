@@ -1,3 +1,11 @@
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
 .product-cards {
     display: flex;
     flex-wrap: wrap;

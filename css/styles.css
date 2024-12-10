@@ -79,6 +79,13 @@ nav ul li a{
     text-decoration: none;
     color: rgb(189, 25, 25);
 }
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .barra {
     background-color: black;
     color: white;
