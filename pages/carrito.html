@@ -66,15 +66,30 @@
 
         <main>
             <section>     
-                <div class="container my-5">
-                    <div id="productos-container" class="row">
-                    <!-- voy a colocar las cards dinamicas -->
+                <div class="container mt-5">
+                    <h2 class="mb-4">Carrito de Compras</h2>
+            
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carrito-items">
+                            <!-- Aquí se cargarán los productos del carrito -->
+                        </tbody>
+                    </table>
+            
+                    <div class="text-end mb-3">
+                        <h4>Total: $<span id="total">0</span></h4>
                     </div>
-
-                    <div class="d-flex justify-content-between align-items-center">
-                        <button id="prev-btn" class="btn btn-secondary">Anterior</button>
-                        <span id="page-info"></span>
-                        <button id="next-btn" class="btn btn-secondary">Siguiente</button>
+            
+                    <div class="d-flex justify-content-between">
+                        <button id="limpiar-carrito" class="btn btn-danger">Volver al Inicio</button>
+                        <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button>
                     </div>
                 </div>
             </section>    
@@ -146,6 +161,6 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="../js/script.js"></script>
+        <script src="../js/carrito.js"></script>
 </body>
 </html>
