@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () =>
     document.getElementById('limpiar-carrito').addEventListener('click', () => 
     {
         localStorage.removeItem('cart'); 
-        window.location.href = 'index.html'; 
+        window.location.href = '../index.html'; 
     });
 
     // Botón para finalizar la compra con sweet Alert
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () =>
         
         // Redirigir al inicio despues de 4 segundos
         setTimeout(() => {
-        window.location.href = 'index.html'; 
+        window.location.href = '../index.html'; 
         }, 4000);     
     });
 });
