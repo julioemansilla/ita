@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="/css/accesorios.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/carrito.css">
 
 
 </head>
@@ -70,15 +71,17 @@
                     <h2 class="mb-4">Carrito de Compras</h2>
             
                     <table class="table table-bordered">
-                        <thead class="table-dark">
+                        <!-- <thead class="table-dark"> -->
+                        <thead class="encabezado">
+
                             <tr>
-                                <th>Producto</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                                <th>Subtotal</th>
+                                <th style="color:brown">Producto</th>
+                                <th style="color:brown">Precio</th>
+                                <th style="color:brown">Cantidad</th>
+                                <th style="color:brown">Subtotal</th>
                             </tr>
                         </thead>
-                        <tbody id="carrito-items">
+                        <tbody id="carrito-items"> 
                             <!-- Aquí se cargarán los productos del carrito -->
                         </tbody>
                     </table>
@@ -88,22 +91,25 @@
                     </div>
             
                     <div class="d-flex justify-content-between">
-                        <button id="limpiar-carrito" class="btn btn-danger">Volver al Inicio</button>
-                        <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button>
+                        <!-- <button id="limpiar-carrito" class="btn btn-danger">Volver al Inicio</button>
+                        <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button> -->
+                        <button id="limpiar-carrito" class="btn btpg">Volver al Inicio</button>
+                        <button id="finalizar-compra" class="btn btpg">Finalizar Compra</button>
                     </div>
                 </div>
             </section>    
         </main>
 
         <footer>
-            <section class="newsletter"> <!--Separador Registro al Newsletter-->
+            <!--Separador Registro al Newsletter-->
+            <!-- <section class="newsletter"> 
                 <h2 class="news_item">Newsletter</h2>
                 <p class="news_item">Registrate y recibí nuestras ofertas</p>
                 <form class="news_item" action="">
                     <input type="email" id="mail_news" name="mail" placeholder="Ingrese su Mail" required class="email_news">
                 </form>
                 <a class="news_item" href="#">Enviar</a>
-            </section> 
+            </section>  -->
 
             <section class="tienda_encontrarnos_atencion"> <!--Donde Encontrarnos-->
                 <section class="tienda tea_item">

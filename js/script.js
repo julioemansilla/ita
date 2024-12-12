@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () =>
 
   //estan variables se utilizan para ver la pagina actual, la cantidad de elementos a mostrar y el total de elementos.
   let currentPage = 1;
-  const limit = 20;
+  const limit = 21;
   let totalProductos = 0;
 
 
